@@ -1,0 +1,10 @@
+# Copyright © 2019, The AROS Development Team. All rights reserved.
+# $Id$
+
+include $(SRCDIR)/config/aros-contrib.cfg
+
+TARGETDIR := $(AROS_CONTRIB)/MultiMedia/Gfx/Lunapaint/Catalogs
+
+%build_catalogs mmake=contrib-gfx-lunapaint-catalogs \
+    name=Lunapaint source=$(GENDIR)/$(CURDIR)/../strings.h \
+    subdir= dir=$(TARGETDIR)
